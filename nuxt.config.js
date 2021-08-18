@@ -37,5 +37,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    cache: true,
+    hardSource: true,
+    splitChunks: {
+      layouts: true,
+      pages: true,
+      commons: true
+    },
+    ssr: true,
+    standalone: true,
+    publicPath: '/_nuxt/'
   }
 }
